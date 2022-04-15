@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Inter:wght@700&family=Open+Sans:wght@300&family=Pacifico&display=swap');
+
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* cabeçalho */
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 20vh;
+flex-wrap: wrap;
+z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+padding: 20px;
+}
+nav ul li a {
+    color: #0b573c;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 700ms;
+}
+
+nav ul li a:hover{
+    background: #0b573c;
+    color: #fff; padding: 10px;
+}
+
+.star-bucks a {
+    padding: 20px;
+    font-size: 70px;
+    color: #0b573c;
+    text-decoration: none;
+}
+
+/* conteudo-1 */
+.coffe1 {
+    display: flex;
+justify-content: space-between;
+margin-top: 80px;
+padding: 10px;  
+
+}
+.coffe1 section {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;  
+    width: 100%;
+    height: 480px;
+    background: #d4e9e2;
+}
+.coffe1 section h1 {
+    color: #0b573c;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.coffe1 section p {
+    color: #0b573c;
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+
+#coffe-cont {
+width: 600px;
+height: 500px;
+padding: 10px;
+}
+
+.java-2 {
+    display: flex;
+margin-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+ .text {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;  
+   
+    background: #d4e9e2;
+}
+.text h1 {
+font-size: 30px;
+color: #0b573c;
+}
+.text p {
+   font-size: 20px;
+   color: #0b573c;
+}
+
+.img {
+    padding: 20px;
+    position: relative;
+}
+
+
+.coffe-2 {
+    width: 300px;
+    height: 300px;
+ z-index: 3;
+}
+
+.java-coffe2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    z-index: 1;
+}
+
+@media (max-width: 910px) {
+
+.coffe1 {
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+#coffe-cont {
+    width: 500px; 
+    height: 500px;
+}
+.coffe1 section {
+    width: 480px; 
+    height: 530px;
+}
+
+
+.java-2 {
+    display: flex;
+margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.text {
+    margin-top: 80px;
+    text-align: center;
+    height: 22px;
+    width: 800px;
+}
+.text h1 {
+    font-size: 30px;
+}
+
+.text p {
+     font-size: 20px;
+}
+.img
+{
+    display: flex;
+    justify-content: center;
+}
+
+.coffe-2 {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+.java-coffe2 {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+    top: 100px;
+    left: 100px;
+}
+}
+
+@media (max-width: 500px) {
+    .header {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+    } 
+
+    nav ul {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav ul li a {
+        text-align: center;
+
+    }
+
+    #coffe-cont {
+        width: 190px;
+        height: 180px;
+    }
+.coffe1 {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+    .coffe1 section {
+        width: 190px;
+        height: 180px;
+    }
+    .coffe1 section h1 {
+        font-size: 25px;
+}
+ .coffe1 section {
+     height: 450px;
+ }
+
+.coffe1 section p {
+    font-size: 14px;
+   
+}
+.img {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffe-2 {
+    width: 120px;
+    height: 120px;
+}
+
+.java-coffe2 {
+    width: 120px;
+    height: 120px;
+left: 80px;
+top: 100px;
+z-index: 100;
+}
+}
+
+.text {
+    width: 200px;
+    height: 500px;
+}
+
+@media (max-width: 211px) {
+    .coffe1 section h1 {
+        font-size: 25px;
+}
+ .coffe1 section {
+     height: 450px;
+ }
+
+.coffe1 section p {
+    font-size: 14px;
+   
+}
+.text {
+    width: 180px;
+    height: 400px;
+}
+.text h1 {
+    font-size: 20px;
+
+}
+.text p {
+    font-size: 15px;
+}
+    
+}
